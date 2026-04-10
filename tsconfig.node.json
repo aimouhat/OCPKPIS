@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    // --- Module Configuration: The Core Fix ---
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    
+    // --- Output ---
+    "outDir": "./dist-server", // Tells TSC where to create the JS files
+    "sourceMap": true,
+
+    // --- Language and Environment ---
+    "target": "ES2022",
+    "lib": ["ES2022"],
+
+    // --- Interoperability and Strictness (Best Practices) ---
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "files": [
+    "server.ts" // Explicitly tells TSC to compile this file
+  ]
+}

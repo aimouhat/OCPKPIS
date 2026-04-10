@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // --- Module Configuration: The Core Fix ---
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    // --- Project Setup ---
+    "composite": true, // Required for project references in the root tsconfig.json
+    "target": "ES2022", // Target modern JavaScript features
+    "sourceMap": true, // Essential for debugging
+    "outDir": "dist", // Where compiled JS files will go for a production build
+
+    // --- Interoperability and Strictness (Best Practices) ---
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true // Speeds up compilation by not checking library types
+  },
+  "include": [
+    "server.ts"
+  ] // Tells TypeScript to only apply these rules to your server file
+}
